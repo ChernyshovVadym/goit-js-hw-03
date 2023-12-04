@@ -5,15 +5,19 @@
 // Усі слова slug повинні бути розділені тире.
 
 
+function slugify(title) {
+    return title.toLowerCase().split(' ').join('-')
+
+}
 
 
 
-
-
-
-
-
-
+// const title = "How to become a JUNIOR developer in TWO WEEKS"
+// console.log(title.toLowerCase());
+// const titleCase = title.toLowerCase();
+// console.log(titleCase.split(' '));
+// const titleSb = titleCase.split(' ');
+// console.log(titleSb.join('-'))
 
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
